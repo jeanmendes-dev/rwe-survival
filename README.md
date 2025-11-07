@@ -44,7 +44,3 @@ Desenvolver uma **análise completa de sobrevivência** com:
 | **Visualização 2D** | `ggplot2`, `survminer` |
 | **Visualização 3D** | `plotly` |
 | **Relatórios** | `rmarkdown` (pronto para integração) |
-
-### 1. Clone o repositório
-```bash
-git clone https://github.com/seu-usuario/rwe-survival.git
