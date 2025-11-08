@@ -1,46 +1,46 @@
 # 🧬 rwe-survival  
-### Análise de Sobrevivência com Dados do SUS — Real-World Evidence Brasileira  
+### Survival Analysis with SUS Data — Brazilian Real-World Evidence 
 
 [![R](https://img.shields.io/badge/R-4.0%2B-276DC3?logo=r&logoColor=white)](https://www.r-project.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![RStudio](https://img.shields.io/badge/IDE-RStudio-75AADB?logo=rstudio)](https://rstudio.com/)
 
-> **Evidência do mundo real para políticas de saúde pública no Brasil**  
-> Um projeto *open-source* para análise de sobrevida usando dados simulados (prontos para substituição por dados reais do DATASUS), com foco em **disparidades regionais e demográficas**.
+> **Real-world evidence for public health policy in Brazil**  
+> An open-source project for survival analysis using simulated data (ready to be replaced by real DATASUS data), focusing on regional and demographic disparities.**.
 
 ---
 
-## 🎯 Objetivo
+## 🎯 Objective
 
-Desenvolver uma **análise completa de sobrevivência** com:
+To develop a comprehensive survival analysis featuring:
 
-- ✅ Modelos de Kaplan-Meier por **região geográfica**  
-- ✅ Estratificação por **faixa etária** (Jovem / Adulto / Idoso)  
-- ✅ Visualizações 2D profissionais (`ggsurvplot`) + **superfície 3D interativa** (`plotly`)  
-- ✅ Código modular, reprodutível e documentado  
+- ✅ Kaplan-Meier models by geographic region**  
+- ✅ Stratification by age group (Young / Adult / Elderly)  
+- ✅ Professional 2D visualizations (ggsurvplot) + interactive 3D surfaces (plotly)  
+- ✅ Modular, reproducible, and well-documented code
 
-👉 **Diferencial**: Enquanto muitos projetos usam dados clínicos ideais, este explora cenários realistas — com censura, variação demográfica e estrutura do SUS — preparando o caminho para análise com dados reais.
+👉 **Differential factor**: While most projects rely on idealized clinical data, this one explores realistic scenarios — with censoring, demographic variation, and the SUS structure — paving the way for future integration with real-world data.
 
 ---
 
-## 📊 Principais Resultados
+## 📊 Main Results
 
-| Análise | Gráfico | Insight |
+| Analysis | Plot | Insight |
 |--------|---------|---------|
-| **Sobrevivência por região** | ![KM Região](img1.png) | Curvas sobrepostas (p = 0.97) → sem diferença significativa entre regiões *(como esperado na simulação)* |
-| **Sobrevivência por idade** | ![KM Idade](img2.png) | **Idosos têm menor sobrevida** — fator crítico para políticas públicas |
-| **Superfície 3D: idade × tempo × sobrevivência** | ![Superfície 3D](img3.png) | Queda acentuada nos primeiros 250 dias, especialmente em idosos |
+| **Survival by region** | ![KM Região](img1.png) | Overlapping curves (p = 0.97) → no significant difference among regions (as expected in the simulation)* |
+| **Survival by age group** | ![KM Idade](img2.png) | **Elderly individuals show lower survival** — a critical factor for public health policy |
+| **3D Surface: age × time × survival** | ![Superfície 3D](img3.png) | Steep decline within the first 250 days, especially among elderly participants |
 
-> 💡 *Todos os gráficos são interativos em `plotly` ou prontos para exportação em alta resolução.*
+> 💡 *All plots are interactive via plotly or ready for high-resolution export.*
 
 ---
 
-## 🧪 Tecnologias Utilizadas
+## 🧪 Technologies Used
 
-| Categoria | Pacotes |
+| Category | Packages |
 |---------|---------|
-| **Modelagem** | `survival`, `broom` |
-| **Manipulação** | `dplyr`, `lubridate` |
-| **Visualização 2D** | `ggplot2`, `survminer` |
-| **Visualização 3D** | `plotly` |
-| **Relatórios** | `rmarkdown` (pronto para integração) |
+| **Modeling** | `survival`, `broom` |
+| **Data Manipulation** | `dplyr`, `lubridate` |
+| **2D Visualization** | `ggplot2`, `survminer` |
+| **3D Visualization** | `plotly` |
+| **Reporting** | `rmarkdown` (pronto para integração) |
